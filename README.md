@@ -4,7 +4,7 @@ This android application prints name of color from RGB. For example: rgb(0,0,0)â
 ## Screenshot:
 ![](https://i.postimg.cc/d0CnRpm5/Screenshot-20200508-144204.png)
 ### About author
-YouTube: www.youtube.com/channel/UCgLPiCz67lGdpAi6EY_hxYg
-Instagram: www.instagram.com/gleb_developer/
-Telegram (for messages): t.me/hlebr
-Telegram chanel: t.me/gleb_developer
+YouTube: https://www.youtube.com/channel/UCgLPiCz67lGdpAi6EY_hxYg <br>
+Instagram: https://www.instagram.com/gleb_developer/ <br>
+Telegram (for messages): https://t.me/hlebr <br>
+Telegram chanel: https://t.me/gleb_developer <br>
