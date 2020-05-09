@@ -1,4 +1,4 @@
-package com.glebrasskazov.scickit_android;
+package com.glebrasskazov.gRGBc;
 //from https://stackoverflow.com/questions/14212518/is-there-a-way-to-define-a-min-and-max-value-for-edittext-in-android/14212734#14212734
 import android.text.InputFilter;
 import android.text.Spanned;

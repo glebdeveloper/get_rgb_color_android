@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
 public class MainActivity extends Activity {
     Python python;
     PyObject pyObject;
@@ -18,9 +17,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (! Python.isStarted()) {
-            Python.start(new AndroidPlatform(this));
-        }
         python=Python.getInstance();
         pyObject=python.getModule("script1");
         textView=findViewById(R.id.textV);
@@ -45,9 +41,9 @@ public class MainActivity extends Activity {
                 textView.setText(pyObject.callAttr("predictColor", r, g, b).toString());
             }
         };
-        rEdit.setFilters(new InputFilter[]{ new com.glebrasskazov.scickit_android.InputFilterMinMax("0", "255")});
-        gEdit.setFilters(new InputFilter[]{ new com.glebrasskazov.scickit_android.InputFilterMinMax("0", "255")});
-        bEdit.setFilters(new InputFilter[]{ new com.glebrasskazov.scickit_android.InputFilterMinMax("0", "255")});
+        rEdit.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "255")});
+        gEdit.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "255")});
+        bEdit.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "255")});
         rEdit.addTextChangedListener(watcher);
         gEdit.addTextChangedListener(watcher);
         bEdit.addTextChangedListener(watcher);
